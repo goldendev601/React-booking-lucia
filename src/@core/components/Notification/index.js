@@ -1,0 +1,1 @@
+export {default as Notification} from '@core/components/Notification/Notification'

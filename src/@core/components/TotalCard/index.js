@@ -1,0 +1,1 @@
+export {default as TotalCard} from '@core/components/TotalCard/TotalCard'

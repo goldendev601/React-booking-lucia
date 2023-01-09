@@ -1,0 +1,1 @@
+export {default as PriceField} from '@core/components/PriceField/PriceField'

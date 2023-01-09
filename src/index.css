@@ -1,0 +1,715 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+@font-face {
+    font-family: 'MADE Mirage Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('MADE Mirage Regular'), url('assets/fonts/made-mirage-cufonfonts-webfont/MADE-Mirage-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'MADE Mirage Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('MADE Mirage Thin'), url('assets/fonts/made-mirage-cufonfonts-webfont/MADE-Mirage-Thin.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'MADE Mirage Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('MADE Mirage Medium'), url('assets/fonts/made-mirage-cufonfonts-webfont/MADE-Mirage-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'MADE Mirage Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('MADE Mirage Bold'), url('assets/fonts/made-mirage-cufonfonts-webfont/MADE-Mirage-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'MADE Mirage Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('MADE Mirage Black'), url('assets/fonts/made-mirage-cufonfonts-webfont/MADE-Mirage-Black.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gallient Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gallient Regular'), url('assets/fonts/Gallient/Gallient.ttf') format('truetype');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: auto !important;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fafafa;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #AFAFAF;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #858585;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+span {
+    font-family: 'Raleway', sans-serif;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.custom-styles {
+    --ReactInputVerificationCode-itemWidth: 90px;
+    --ReactInputVerificationCode-itemHeight: 80px;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+}
+
+.custom-styles .ReactInputVerificationCode__item {
+    position: relative;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.custom-styles-error .ReactInputVerificationCode__item {
+    position: relative;
+    color: #EB5757;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.custom-styles .ReactInputVerificationCode__item,
+.custom-styles .ReactInputVerificationCode__item.is-active {
+    box-shadow: none;
+}
+
+.custom-styles .ReactInputVerificationCode__item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    background-color: #878787;
+    transition: background-color 0.2s ease-out;
+}
+
+.custom-styles .ReactInputVerificationCode__item.is-active:after {
+    background-color: black;
+}
+
+.MuiFormControlLabel-label {
+    color: #fff !important;
+}
+
+.error-text {
+    font-size: 0.75rem;
+    color: #f44336;
+    position: absolute;
+    left: 11px;
+}
+
+.span-lucia {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+    color: #242424;
+}
+
+.logo {
+    align-self: baseline;
+    margin-bottom: 50px;
+}
+
+.logo-center {
+    align-self: baseline;
+    margin-bottom: 58px;
+    text-align: center;
+    width: 100%;
+    z-index: 99;
+}
+
+.itinerary-id {
+    color: #242424;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+}
+
+.normal-text-bold {
+    font-size: 16px;
+}
+
+
+
+.brand-color {
+    color: #BA886E;
+}
+
+.autocomplete-hover:hover > span {
+    color: #242424;
+}
+
+.autocompleteAM-hover:hover > span {
+    color: #242424;
+}
+
+.autocomplete {
+    border: 0.05em solid rgba(186, 136, 110, 0.4);
+    width: 380px;
+    height: 40px;
+}
+
+.autocompleteAM {
+    border: 0.05em solid rgba(186, 136, 110, 0.4);
+    width: 472px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.MuiAutocomplete-option[aria-selected="true"] {
+    background-color: white !important;
+}
+
+.MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"] {
+    padding: 3px !important;
+}
+
+.selected {
+    font-weight: 600 !important;
+}
+
+.card-content-margin > * {
+    margin-top: 20px !important;
+}
+
+.rs-picker-menu {
+    z-index: 1300 !important;
+    border-radius: 0 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+.MuiAutocomplete-option[data-focus="true"] {
+    background-color: white !important;
+}
+
+.MuiAutocomplete-option {
+    padding: 0 !important;
+}
+
+.MuiAutocomplete-listbox {
+    padding: 0 !important;
+}
+
+.MuiAutocomplete-noOptions {
+    padding: 0 !important;
+}
+
+.autocomplete {
+    padding: 7px 0 0 20px !important;
+}
+
+.span-small {
+    font-family: Raleway, serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #BA886E;
+    display: block;
+}
+
+.border-spaced {
+    width: 250px;
+    height: 200px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='2' stroke-dasharray='4%2c 8' stroke-dashoffset='3' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+.border-spaced-large {
+    width: 100%;    
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='2' stroke-dasharray='4%2c 8' stroke-dashoffset='3' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+a {
+    color: #BA886E !important;
+}
+
+a:hover {
+    color: #BA886E !important;
+}
+
+/*Pagination*/
+.MuiPaginationItem-ellipsis {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.MuiPaginationItem-root {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.MuiPagination-ul li:last-child {
+    order: 19999 !important;
+}
+
+.MuiPagination-ul li:first-child {
+    order: 19990 !important;
+}
+
+.MuiPagination-ul > :last-child > button {
+    background-color: #BA886E !important;
+    color: white !important;
+}
+
+.MuiPagination-ul > :first-child > button {
+    background-color: #BA886E !important;
+    color: white !important;
+}
+
+.MuiPagination-ul li:not(:first-child):not(:last-child) > button {
+    background-color: #fafafa !important;
+    border: 1px solid #BA886E !important;
+    color: #BA886E !important;
+}
+
+.MuiButtonBase-root.MuiPaginationItem-root.MuiPaginationItem-page.MuiPaginationItem-rounded.MuiPaginationItem-textPrimary.Mui-selected {
+    background-color: #BA886E !important;
+    color: white !important;
+}
+
+.MuiPaginationItem-rounded {
+    border-radius: unset !important;
+}
+
+.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26) !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+    border: none !important;
+}
+
+/*Datepicker*/
+
+/* .rs-picker-menu {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    -webkit-transform: translate(-50%, -50%) !important;
+    transform: translate(-50%, -50%) !important;
+} */
+
+.rs-picker-daterange-menu {
+    width: 560px !important;
+}
+
+.rs-picker-has-value .rs-btn .rs-picker-toggle-value, .rs-picker-has-value .rs-picker-toggle .rs-picker-toggle-value {
+    color: #828282 !important;
+    padding-left: 20px !important;
+}
+
+.rs-picker-default:not(.rs-picker-disabled) .rs-btn:hover, .rs-picker-default:not(.rs-picker-disabled) .rs-picker-toggle:hover, .rs-picker-default:not(.rs-picker-disabled) .rs-btn.active, .rs-picker-default:not(.rs-picker-disabled) .rs-picker-toggle.active {
+    border-color: #242424 !important;
+    /*border-width: 2px !important;*/
+}
+
+.rs-calendar-table-cell-is-today .rs-calendar-table-cell-content {
+    border: 1px solid #FBF8F3 !important;
+}
+
+.rs-calendar-table-cell-content:hover {
+    background-color: #FBF8F3 !important;
+}
+
+.rs-calendar-table-cell-selected .rs-calendar-table-cell-content {
+    color: #ffffff !important;
+    background-color: #BA886E !important;
+    border-radius: 0 !important;
+}
+
+.rs-calendar-table-cell-in-range::before {
+    background-color: #FBF8F3 !important;
+}
+
+.rs-picker-toolbar-ranges {
+    display: none !important;
+}
+
+.rs-picker-toolbar-right-btn-ok.rs-picker-toolbar-btn-disabled, .rs-picker-toolbar-right-btn-ok.rs-picker-toolbar-btn-disabled:hover, .rs-picker-toolbar-right-btn-ok.rs-picker-toolbar-btn-disabled:hover:active {
+    background-color: #BA886E !important;
+}
+
+.rs-picker-toolbar-right-btn-ok {
+    background-color: #BA886E !important;
+    width: 35px !important;
+    height: 24px !important;
+    border-radius: 0 !important;
+    text-align: center !important;
+    padding: 0 !important;
+}
+
+.rs-picker-date .rs-picker-toggle.rs-btn .rs-picker-toggle-caret, .rs-picker-daterange .rs-picker-toggle.rs-btn .rs-picker-toggle-caret {
+    left: 0 !important;
+    top: 6px !important;
+}
+
+.rs-picker-toggle .rs-picker-toggle-placeholder {
+    display: flex !important;
+    /*justify-content: flex-end !important;*/
+    padding-left: 15px;
+}
+
+/*.rs-picker-daterange .rs-picker-toggle-caret::before {*/
+/*    content: url("assets/icons/calendar.svg") !important;*/
+/*    color: #BA886E !important;*/
+/*}*/
+
+.rs-picker-date .rs-picker-toggle.rs-btn, .rs-picker-daterange .rs-picker-toggle.rs-btn {
+    padding-right: 30px !important;
+}
+
+.rs-picker-toggle-clean {
+    display: none !important;
+}
+
+.rs-picker-default .rs-picker-toggle {
+    border: 0 !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid #828282 !important;
+}
+
+.rs-picker-date .rs-picker-toggle.rs-btn .rs-picker-toggle-clean, .rs-picker-daterange .rs-picker-toggle.rs-btn .rs-picker-toggle-clean {
+    right: 12px !important;
+}
+
+.rs-picker-daterange-header {
+    display: none !important;
+}
+
+.rs-calendar-header-title {
+    color: #242424 !important;
+}
+
+.rs-picker-menu .rs-calendar .rs-calendar-table-header-row .rs-calendar-table-cell-content {
+    color: #242424 !important;
+    font-size: 14px !important;
+}
+
+.rs-picker-toolbar {
+    padding: 9px 6px 9px 0 !important;
+}
+
+.rs-picker-toolbar-right-btn-ok span {
+    display: none !important;
+}
+
+.rs-picker-toolbar-right-btn-ok::after {
+    content: "Ok" !important;
+}
+
+.rs-picker-toolbar {
+    border-top: 1px solid #F0F0F0 !important;
+}
+
+.rs-picker-daterange-menu .rs-calendar:first-child {
+    border: none !important;
+}
+
+.rs-calendar-header-backward, .rs-calendar-header-forward {
+    color: rgba(0, 0, 0, 0.25) !important;
+}
+
+.rs-calendar-month-dropdown-year-active {
+    color: #BA886E !important;
+}
+
+.rs-calendar-month-dropdown-cell-active .rs-calendar-month-dropdown-cell-content {
+    background-color: #BA886E !important;
+    border-radius: 0 !important;
+    padding: 4px !important;
+}
+
+.rs-calendar-month-dropdown-cell-content:hover {
+    background-color: #FBF8F3 !important;
+}
+
+.rs-picker-daterange-menu .rs-calendar-header {
+    margin-bottom: 17px !important;
+}
+
+.rs-calendar {
+    width: 280px !important;
+}
+
+.rs-picker-daterange-menu .rs-picker-toolbar {
+    max-width: 555px !important;
+}
+
+.rs-picker-toggle-caret {
+    color: #BA886E !important;
+}
+
+/*react-big-calendar styles*/
+
+.rbc-calendar {
+    margin: 30px;
+}
+
+.rbc-timeslot-group {
+    min-height: 72px;
+}
+
+.rbc-time-view {
+    border: none;
+}
+
+.rbc-header > * {
+    border: none;
+    font-family: Raleway, sans-serif;
+}
+
+.rbc-time-header.rbc-overflowing {
+    border: none;
+}
+
+.rbc-today {
+    background-color: unset;
+}
+
+.rbc-event, .rbc-day-slot .rbc-background-event {
+    background-color: rgba(76, 40, 15, 0.1);
+    border-radius: 4px;
+    color: #4C280F;
+    padding-left: 12px;
+}
+
+.rbc-day-slot .rbc-event, .rbc-day-slot .rbc-background-event {
+    border: none;
+    box-shadow: inset 3px 0 0 0 #4C280F;
+}
+
+.rbc-day-slot .rbc-event-label {
+    padding-top: 7px;
+}
+
+.rbc-day-slot .rbc-event-content {
+    align-items: center;
+    font-weight: 700;
+}
+
+.rbc-day-slot .rbc-events-container {
+    margin-right: 0;
+}
+
+.rbc-event.rbc-selected, .rbc-day-slot .rbc-selected.rbc-background-event {
+    background-color: rgba(76, 40, 15, 0.1);
+}
+
+/*ant-time-picker*/
+.ant-picker {
+    border: none !important;
+    border-bottom: 1px solid #828282 !important;
+    border-radius: unset !important;
+    padding: 8px 11px 4px !important;
+    margin-top: 22px !important;
+}
+
+.ant-picker-input > input {
+    margin-left: 15px !important;
+}
+
+.ant-picker-input > input {
+    margin-left: 15px !important;
+    position: absolute !important;
+    bottom: 3px !important;
+}
+
+.ant-picker-clear {
+    bottom: -37px !important;
+    background-color: unset !important;
+}
+
+.ant-btn-primary {
+    background: #BA886E !important;
+    border-color: unset !important;
+}
+
+.ant-picker-suffix {
+    position: absolute !important;
+    left: -16px !important;
+    bottom: 4px !important;
+}
+
+.ant-picker-time-panel-column > li.ant-picker-time-panel-cell-selected .ant-picker-time-panel-cell-inner {
+    background: #fbf8f3 !important;
+}
+
+.ant-picker-dropdown {
+    z-index: 1500 !important;
+}
+
+.ant-picker-focused {
+    border-color: unset !important;
+    border-bottom-width: 1px !important;
+    box-shadow: none !important;
+}
+
+.ant-picker:hover, .ant-picker-focused {
+    border-color: unset !important;
+}
+
+.ant-picker-panel-container .ant-picker-panel {
+    font-family: Raleway, serif !important;
+}
+
+/*Snackbar*/
+.Snackbar_snackbar-wrapper__ocbPJ {
+    z-index: 10000 !important;
+}
+
+.chip-label {
+    margin-top: -7px !important;
+}
+
+.MuiChip-deleteIcon {
+    width: 12px !important;
+}
+
+/*Datagrid*/
+.MuiDataGrid-root .MuiDataGrid-row {
+    cursor: pointer;
+}
+
+/*RichTextEditor*/
+.rdw-editor-wrapper {
+    height: 95% !important;
+}
+
+.MuiList-padding {
+    max-height: 300px !important;
+    /* height: 300px !important; */
+}
+
+.MuiIconButton-colorSecondary {
+    height: 18px;
+}
+
+.file-drop {
+    /* relatively position the container bc the contents are absolute */
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+  
+.file-drop > .file-drop-target {
+    /* basic styles */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+  
+    /* horizontally and vertically center all content */
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+  
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+  
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+  
+    justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+  
+    align-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+  
+    text-align: center;
+}
+  
+.file-drop > .file-drop-target.file-drop-dragging-over-frame {
+    /* overlay a black mask when dragging over the frame */
+    border: none;
+    background-color: rgba(0, 0, 0, 0.65);
+    box-shadow: none;
+    z-index: 50;
+    opacity: 1;
+  
+    /* typography */
+    color: white;
+}
+  
+.file-drop > .file-drop-target.file-drop-dragging-over-target {
+    /* turn stuff orange when we are dragging over the target */
+    color: #ff6e40;
+    box-shadow: 0 0 13px 3px #ff6e40;
+}
+
+@media (max-width:1200px) {
+    .profile-name {
+        display: none;
+    }
+}

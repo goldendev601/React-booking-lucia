@@ -1,0 +1,32 @@
+version: '3.5'
+
+services:
+
+  web_app:
+    container_name: lucia_app
+    build:
+        context: ..
+        dockerfile: .Dockerfile
+
+    image: lucia_app:latest
+
+    deploy:
+      resources:
+        # https://docs.docker.com/compose/compose-file/compose-file-v3/#resources
+        # docker inspect name
+        limits:
+#          cpus: '0.75'
+          memory: 3512M
+
+        # always available
+        reservations:
+#          cpus: '0.5'
+          memory: 2024M
+
+    volumes:
+      # Added for tracing npm actions
+      - /home/docker-apps/lucia/environs:/home/environs
+      - /home/docker-apps/lucia/.npm:/root/.npm
+
+    ports:
+      - "${LAUNCH_HTTP_PORT}:80"

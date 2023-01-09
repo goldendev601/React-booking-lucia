@@ -1,0 +1,1 @@
+export {default as NotificationHandler} from '@core/components/NotificationHandler/NotificationHandler'

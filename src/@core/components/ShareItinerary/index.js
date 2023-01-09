@@ -1,0 +1,1 @@
+export {default as ShareItineraryDialog} from '@core/components/ShareItinerary/ShareItineraryDialog';

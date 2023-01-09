@@ -1,0 +1,1 @@
+docker exec -it lucia_app bash

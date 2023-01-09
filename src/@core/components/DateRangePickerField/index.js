@@ -1,0 +1,1 @@
+export {default as DateRangePickerField} from '@core/components/DateRangePickerField/DateRangePickerField';

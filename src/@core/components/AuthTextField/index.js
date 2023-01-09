@@ -1,0 +1,1 @@
+export {default as AuthTextField} from '@core/components/AuthTextField/AuthTextField';

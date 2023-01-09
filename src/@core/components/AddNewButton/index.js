@@ -1,0 +1,1 @@
+export {default as AddNewButton} from '@core/components/AddNewButton/AddNewButton';
